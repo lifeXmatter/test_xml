@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="cryptodata">
+		<xsd:complexType>
+		<xsd:element name="coin">
+			<xsd:complexType>
+				<xsd:sequence>
+					<xsd:element name="rank" type="xs:integer"/>
+					<xsd:element name="name" type="xs:string"/>
+					<xsd:element name="symbol" type="xs:string"/>
+					<xsd:element name="priceusd" type="xs:string"/>
+					<xsd:element name="marketcap" type="xs:string"/>
+					<xsd:element name="availablesupply" type="xs:string"/>
+				</xsd:sequence>	
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:complexType>
+	</xsd:element>
+<xsd:simpleType name="rank">
+  <xsd:restriction base="xs:integer">
+    <xsd:minInclusive value="1"/>
+    <xsd:maxInclusive value="100"/>
+  </xsd:restriction>
+</xsd:simpleType>
+</xsd:schema>
