@@ -10,7 +10,7 @@
       <th style="text-align:left">Name</th>
 	  <th style="text-align:left">Ticker</th>
       <th style="text-align:left">Price in USD</th>
-	  <th style="text-align:left">Price in BTC</th>
+	  <th style="text-align:left">Market Cap in USD</th>
       <th style="text-align:left">Available Supply</th>
     </tr>
     <xsl:for-each select="cryptodata/coin">
