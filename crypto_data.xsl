@@ -11,16 +11,16 @@
 	  <th style="text-align:left">Ticker</th>
       <th style="text-align:left">Price in USD</th>
 	  <th style="text-align:left">Price in BTC</th>
-      <th style="text-align:left">Volume</th>
+      <th style="text-align:left">Available Supply</th>
     </tr>
-    <xsl:for-each select="cryptoprices/Sheet1">
+    <xsl:for-each select="cryptodata/coin">
     <tr>
-      <td><xsl:value-of select="Rank"/></td>
-      <td><xsl:value-of select="Name"/></td>
-      <td><xsl:value-of select="Symbol"/></td>
-      <td><xsl:value-of select="Price_Usd"/></td>
-	  <td><xsl:value-of select="Price_Btc"/></td>
-      <td><xsl:value-of select="24h_Volume_Usd"/></td>
+      <td><xsl:value-of select="rank"/></td>
+      <td><xsl:value-of select="name"/></td>
+      <td><xsl:value-of select="symbol"/></td>
+      <td><xsl:value-of select="priceusd"/></td>
+	  <td><xsl:value-of select="marketcap"/></td>
+      <td><xsl:value-of select="availablesupply"/></td>
     </tr>
     </xsl:for-each>
   </table>
